@@ -12,3 +12,11 @@
     <li><a href="https://meme.gabrielkheisa.xyz/therock">The Rock</a></li>
     <li><a href="https://meme.gabrielkheisa.xyz/noot">Noot</a></li>
 </ul>
+
+<br>
+
+https://cdn.discordapp.com/attachments/1003173519879847966/1027301102019956756/587917321.mp4
+
+<br>
+
+https://cdn.discordapp.com/attachments/1003173519879847966/1027301102296780881/5879173211.mp4
