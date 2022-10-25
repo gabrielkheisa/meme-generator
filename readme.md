@@ -99,7 +99,12 @@ exit;
 cd /var/www/html/meme-generator
 </pre>
 
-<h3>8. Run the Python script, detach from <b>screen</b> by pressing <b>Ctrl + A</b> then <b>Ctrl + D</b></h3>
+<h3>8. Install Python 3, pip3, and remaining dependencies</b></h3>
+<pre>
+apk add --no-cache python3 py3-pip
+</pre>
+
+<h3>9. Run the Python script, detach from <b>screen</b> by pressing <b>Ctrl + A</b> then <b>Ctrl + D</b></h3>
 <pre>
 python3 renderDB.py
 </pre>
