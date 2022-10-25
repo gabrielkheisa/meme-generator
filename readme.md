@@ -8,6 +8,16 @@
 </ul>
 <h2>Table structure (optional):</h2>
 <img src="https://cdn.discordapp.com/attachments/1003173519879847966/1033705729653223424/unknown.png" width="100%">
+<pre>
+CREATE TABLE `meme` (
+	`id` INT(10) NOT NULL AUTO_INCREMENT,
+	`session` VARCHAR(20),
+	`status` INT(1),
+	`timestamp` TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+	`value` TEXT,
+	PRIMARY KEY (`id`)
+);
+</pre>
 <h2>Process flow:</h2>
 <img src="https://cdn.discordapp.com/attachments/1003173519879847966/1033781184272015430/process.jpg">
 <h2>Preview:</h2>
