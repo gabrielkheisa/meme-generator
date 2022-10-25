@@ -26,3 +26,4 @@ CREATE TABLE `meme` (
     <li><a href="https://meme.gabrielkheisa.xyz/therock">The Rock</a></li>
     <li><a href="https://meme.gabrielkheisa.xyz/noot">Noot</a></li>
 </ul>
+<p>For Docker installation, switch to <a href="">docker branch</a></p>
