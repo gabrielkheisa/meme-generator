@@ -5,8 +5,7 @@ import time
 import textwrap
 import mysql.connector
 
-from moviepy.config import change_settings
-change_settings({"IMAGEMAGICK_BINARY": r"/usr/bin/convert"})
+
 
 bendera = 0
 
