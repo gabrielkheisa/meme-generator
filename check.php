@@ -1,9 +1,9 @@
 <?php
 
-$servername = "";
-$username = "";
-$password = "";
-$dbname = "";
+$servername = "127.0.0.1";
+$username = "dbusr";
+$password = "securepwd";
+$dbname = "appdb";
 
 //Query params
 $q = $_REQUEST["q"];

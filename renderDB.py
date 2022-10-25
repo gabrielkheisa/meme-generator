@@ -89,15 +89,14 @@ def checkindo():
 
 while True:
   mydb = mysql.connector.connect(
-  host="",
-  user="",
-  password="",
-  database=""
+  host="127.0.0.1",
+  user="dbusr",
+  password="securepwd",
+  database="appdb"
   )
 
   checkindo()  
   time.sleep(1)
-
 # textwrap.fill(tp[0].upper(), thesize)
 
   
