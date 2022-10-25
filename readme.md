@@ -1,5 +1,6 @@
 <h1>Video meme generator</h1>
 <h3>Generate subtitle and render it to a video</h3>
+<img src="https://cdn.discordapp.com/attachments/1003173519879847966/1034466837854949436/2022-10-25_20-50-39.gif">
 <h2>Requirements:</h2>
 <ul>
     <li>PHP 7.2</li>
