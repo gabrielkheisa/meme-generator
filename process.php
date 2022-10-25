@@ -17,10 +17,10 @@ fclose($myfile);
 }
 */
 
-$servername = "";
-$username = "";
-$password = "";
-$dbname = "";
+$servername = "127.0.0.1";
+$username = "dbusr";
+$password = "securepwd";
+$dbname = "appdb";
 
 $sesid = rand(1,999999999);
 
