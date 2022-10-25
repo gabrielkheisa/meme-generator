@@ -75,7 +75,10 @@ git clone https://repo.gabrielkheisa.xyz/gabrielkheisa/meme-generator.git
 git checkout docker
 </pre>
 
-<h3>4. Bash into container</h3>
+<h3>4. Bash into container, to run it as detached output (in background) use <b>screen</b></h3>
+<pre>
+screen
+</pre>
 <pre>
 docker exec -u root -t -i some-app /bin/bash
 </pre>
@@ -96,7 +99,7 @@ exit;
 cd /var/www/html/meme-generator
 </pre>
 
-<h3>8. Run the Python script</b></h3>
+<h3>8. Run the Python script, detach from <b>screen</b> by pressing <b>Ctrl + A</b> then <b>Ctrl + D</b></h3>
 <pre>
 python3 renderDB.py
 </pre>
