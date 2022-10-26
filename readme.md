@@ -35,7 +35,9 @@
 <h2>Installation with Docker LEMP Stack:</h2>
 
 <h3>1. Create a file, named <b>docker-compose.yml</b>. Insert with these contents:</h3>
-<pre>
+
+
+```yaml
 # ./docker-compose.yml
 version: '3'
 
@@ -62,17 +64,18 @@ services:
 
 volumes:
   db_data: {}
-</pre>
+```
 
 <h3>2. Then compose</h3>
 <pre>
 docker-compose up -d
 </pre>
 
-<h3>3. Navigate to <b>meme</b> folder (volume), then clone my repo and change to <b>docker</b> branch</h3>
+<h3>3. Navigate to <b>meme</b> folder (volume), then clone my repo, navigate to <b>meme-generator</b> and then change to <b>docker</b> branch</h3>
 <pre>
 cd meme
 git clone https://repo.gabrielkheisa.xyz/gabrielkheisa/meme-generator.git
+cd meme-generator
 git checkout docker
 </pre>
 
@@ -89,9 +92,23 @@ docker exec -u root -t -i some-app /bin/bash
 mysql -u root -p
 </pre>
 
-<h3>6. Create database <b>meme</b>, then allow <b>dbusr</b> to access it</h3>
+<h3>6. Create table <b>meme</b> in <b>appdb</b> database, then allow <b>dbusr</b> to access it</h3>
 <pre>
-GRANT ALL PRIVILEGES ON meme.* TO 'dbuser'@'localhost' WITH GRANT OPTION;
+USE appdb;
+
+CREATE TABLE `meme` (
+	`id` INT(10) NOT NULL AUTO_INCREMENT,
+	`session` VARCHAR(20),
+	`status` INT(1),
+	`timestamp` TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+	`value` TEXT,
+	PRIMARY KEY (`id`)
+);
+</pre>
+<pre>
+
+
+GRANT ALL PRIVILEGES ON appdb.* TO 'dbusr'@'localhost' WITH GRANT OPTION;
 exit;
 </pre>
 
@@ -104,8 +121,16 @@ cd /var/www/html/meme-generator
 <pre>
 apk add --no-cache python3 py3-pip
 </pre>
+<pre>
+apk add make automake gcc g++ subversion python3-dev
+apk add ffmpeg
+pip3 install --upgrade pip
+pip3 install mysql-connector-python==8.0.29
+pip3 install moviepy
+</pre>
 
 <h3>9. Run the Python script, detach from <b>screen</b> by pressing <b>Ctrl + A</b> then <b>Ctrl + D</b></h3>
 <pre>
 python3 renderDB.py
 </pre>
+<h3>10. Open your browser, navigate to http://{your-ip}:8080/meme-generator/</h3>
