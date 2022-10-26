@@ -32,7 +32,7 @@
 
 
 
-<h2>Installation with Docker LEMP Stack:</h2>
+<h2>Installation with <a href="https://github.com/adhocore/docker-lemp">Docker LEMP Stack</a>:</h2>
 
 <h3>1. Create a file, named <b>docker-compose.yml</b>. Insert with these contents:</h3>
 
