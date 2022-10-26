@@ -74,7 +74,7 @@ docker-compose up -d
 <h3>3. Navigate to <b>meme</b> folder (volume), then clone my repo, navigate to <b>meme-generator</b> and then change to <b>docker</b> branch</h3>
 <pre>
 cd meme
-git clone https://repo.gabrielkheisa.xyz/gabrielkheisa/meme-generator.git
+git clone https://github.com/gabrielkheisa/meme-generator.git
 cd meme-generator
 git checkout docker
 </pre>
@@ -134,3 +134,6 @@ pip3 install moviepy
 python3 renderDB.py
 </pre>
 <h3>10. Open your browser, navigate to http://{your-ip}:8080/meme-generator/</h3>
+
+<h1>External repo</h1>
+https://repo.gabrielkheisa.xyz/gabrielkheisa/meme-generator
