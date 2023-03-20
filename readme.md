@@ -150,6 +150,7 @@ screen
 <pre>
 docker exec -u root -t -i some-app /bin/bash
 </pre>
+<pre>
 cd /var/www/html/meme-generator/ronaldo
 python3 renderDB.py
 </pre>
