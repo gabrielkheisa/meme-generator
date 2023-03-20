@@ -12,7 +12,7 @@ bendera = 0
 theteks = ""
 picture = VideoFileClip("video.mp4")
 
-thesize = 25
+thesize = 30
 
 
 def checkindo():
@@ -64,7 +64,7 @@ def checkindo():
       durations = [3,3,3,3,3,5,3,3,3] 
 
       for text,t,duration in zip(texts, starts, durations): 
-         txt_clip = TextClip(text, fontsize = 40, color='white', font="DejaVu-Serif-Bold", stroke_color="black")
+         txt_clip = TextClip(text, fontsize = 20, color='white', font="DejaVu-Serif-Bold", stroke_color="black")
          txt_clip = txt_clip.set_start(t)
          txt_clip = txt_clip.set_pos('bottom').set_duration(duration)
          txt_clips.append(txt_clip)
