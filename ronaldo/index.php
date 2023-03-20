@@ -10,10 +10,10 @@
 <script src="https://gabrielkheisa.xyz/js/qrcode.min.js"></script>
 
 <?php
-$servername = "";
-$username = "";
-$password = "";
-$dbname = "";
+$servername = "127.0.0.1";
+$username = "dbusr";
+$password = "securepwd";
+$dbname = "appdb";
 
 $sesid = rand(1,999999999);
 
@@ -126,13 +126,7 @@ else {
 <div class=\"form-group m-3 center\">
 	Text 1:<input type=\"text\" id=\"text1\" value=\"KETIKA 1\" oninput=\"gae();\"><br>
 	Text 2:<input type=\"text\" id=\"text2\" value=\"KETIKA 2\" oninput=\"gae();\"><br>
-	Text 3:<input type=\"text\" id=\"text3\" value=\"KETIKA 3\" oninput=\"gae();\"><br>
-	Text 4:<input type=\"text\" id=\"text4\" value=\"KETIKA 4\" oninput=\"gae();\"><br>
-	Text 5:<input type=\"text\" id=\"text5\" value=\"KETIKA 5\" oninput=\"gae();\"><br>
-	Text 6:<input type=\"text\" id=\"text6\" value=\"KETIKA 6\" oninput=\"gae();\"><br>
-	Text 7:<input type=\"text\" id=\"text7\" value=\"KETIKA 7\" oninput=\"gae();\"><br>
-	Text 8:<input type=\"text\" id=\"text8\" value=\"KETIKA 8\" oninput=\"gae();\"><br>
-	Text 9:<input type=\"text\" id=\"text9\" value=\"KETIKA 9\" oninput=\"gae();\"><br>
+
 </div>
 <br><br>
 
