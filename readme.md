@@ -26,7 +26,7 @@ CREATE TABLE `meme` (
     <li><a href="https://meme.gabrielkheisa.xyz/">Slander</a></li>
     <li><a href="https://meme.gabrielkheisa.xyz/therock">The Rock</a></li>
     <li><a href="https://meme.gabrielkheisa.xyz/noot">Noot</a></li>
-    <li><a href="https://meme.gabrielkheisa.xyz/noot">Ronaldo</a></li>
+    <li><a href="https://meme.gabrielkheisa.xyz/ronaldo">Ronaldo</a></li>
 </ul>
 <p>For <b>Docker LEMP stack</b> installation, switch to <a href="https://github.com/gabrielkheisa/meme-generator/tree/docker">docker branch</a></p>
 <br>
