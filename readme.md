@@ -92,11 +92,20 @@ docker exec -u root -t -i some-app /bin/bash
 mysql -u root -p
 </pre>
 
-<h3>6. Create table <b>meme</b> in <b>appdb</b> database, then allow <b>dbusr</b> to access it</h3>
+<h3>6. Create table <b>meme</b> and <b>meme_ronaldo</b> in <b>appdb</b> database, then allow <b>dbusr</b> to access it</h3>
 <pre>
 USE appdb;
 
 CREATE TABLE `meme` (
+	`id` INT(10) NOT NULL AUTO_INCREMENT,
+	`session` VARCHAR(20),
+	`status` INT(1),
+	`timestamp` TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+	`value` TEXT,
+	PRIMARY KEY (`id`)
+);
+
+CREATE TABLE `meme_ronaldo` (
 	`id` INT(10) NOT NULL AUTO_INCREMENT,
 	`session` VARCHAR(20),
 	`status` INT(1),
@@ -133,7 +142,17 @@ pip3 install moviepy
 <pre>
 python3 renderDB.py
 </pre>
-<h3>10. Open your browser, navigate to http://{your-ip}:8080/meme-generator/</h3>
+
+<h3>10. Run the second Python script by creating a new screen session, detach from <b>screen</b> by pressing <b>Ctrl + A</b> then <b>Ctrl + D</b></h3>
+<pre>
+screen
+</pre>
+<pre>
+cd /var/www/html/meme-generator/ronaldo
+python3 renderDB.py
+</pre>
+
+<h3>11. Open your browser, navigate to http://{your-ip}:8080/meme-generator/</h3>
 
 <h1>External repo</h1>
 https://repo.gabrielkheisa.xyz/gabrielkheisa/meme-generator
