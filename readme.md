@@ -155,7 +155,7 @@ cd /var/www/html/meme-generator/ronaldo
 python3 renderDB.py
 </pre>
 
-<h3>11. Open your browser, navigate to http://{your-ip}:8080/meme-generator/</h3>
+<h3>11. Open your browser, navigate to http://{your-ip}:8080/meme-generator/ and http://{your-ip}:8080/meme-generator/ronaldo/</h3>
 
 <h1>External repo</h1>
 https://repo.gabrielkheisa.xyz/gabrielkheisa/meme-generator
