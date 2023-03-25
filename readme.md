@@ -1,6 +1,7 @@
 <h1>Video meme generator</h1>
 <h3>Generate subtitle and render it to a video</h3>
 <img src="https://cdn.discordapp.com/attachments/1003173519879847966/1034466837854949436/2022-10-25_20-50-39.gif">
+<h3>https://meme.gabrielkheisa.xyz</h3>
 <h2>Requirements:</h2>
 <ul>
     <li>PHP 7.2</li>
@@ -27,6 +28,9 @@ CREATE TABLE `meme` (
     <li><a href="https://meme.gabrielkheisa.xyz/therock">The Rock</a></li>
     <li><a href="https://meme.gabrielkheisa.xyz/noot">Noot</a></li>
     <li><a href="https://meme.gabrielkheisa.xyz/ronaldo">Ronaldo</a></li>
+    <li><a href="https://meme.gabrielkheisa.xyz/xqc">xQc</a></li>
+    <li><a href="https://meme.gabrielkheisa.xyz/pedropascal">Pedro Pascal</a></li>
+    <li><a href="https://meme.gabrielkheisa.xyz/mikeohearn">Mike O'Hearn</a></li>
 </ul>
 <p>For <b>Docker LEMP stack</b> installation, switch to <a href="https://github.com/gabrielkheisa/meme-generator/tree/docker">docker branch</a></p>
 <br>
