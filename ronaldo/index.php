@@ -125,7 +125,6 @@ else {
 <br><br>
 <div class=\"form-group m-3 center\">
 	Text 1:<input type=\"text\" id=\"text1\" value=\"KETIKA 1\" oninput=\"gae();\"><br>
-	Text 2:<input type=\"text\" id=\"text2\" value=\"KETIKA 2\" oninput=\"gae();\"><br>
 
 </div>
 <br><br>
