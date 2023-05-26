@@ -5,6 +5,8 @@ import time
 import textwrap
 import mysql.connector
 
+import shutil
+import os
 
 
 bendera = 0
@@ -12,7 +14,7 @@ bendera = 0
 theteks = ""
 picture = VideoFileClip("video.mp4")
 
-thesize = 30
+thesize = 25
 
 
 def checkindo():
@@ -57,14 +59,36 @@ def checkindo():
       durations = [8,0] 
 
       for text,t,duration in zip(texts, starts, durations): 
-         txt_clip = TextClip(text, fontsize = 15, color='white', font="DejaVu-Serif-Bold", stroke_color="black")
+         txt_clip = TextClip(text, fontsize = 15, color='white', font="Bebas-Neue-Bold", stroke_color="black")
          txt_clip = txt_clip.set_start(t)
          txt_clip = txt_clip.set_pos('bottom').set_duration(duration)
          txt_clips.append(txt_clip)
 
       final_video = CompositeVideoClip([picture,txt_clips[0],txt_clips[1]])
-
+      
       final_video.write_videofile(str(user_empty)+".mp4")
+
+      # Get the current directory
+      current_directory = os.getcwd()
+
+      # Specify the file you want to move
+      file_to_move = str(str(user_empty)+".mp4")
+
+      # Specify the destination directory
+      destination_directory = os.path.join(current_directory, "output")
+
+      # Create the "output" directory if it doesn't exist
+      if not os.path.exists(destination_directory):
+       os.makedirs(destination_directory)
+
+      # Build the source and destination file paths
+      source_path = os.path.join(current_directory, file_to_move)
+      destination_path = os.path.join(destination_directory, file_to_move)
+
+      # Move the file
+      shutil.move(source_path, destination_path)
+
+      print("File moved successfully!")
 
       #with open('teks.txt', "w") as myfile:
       #myfile.write("S0VUSUtBIDEsS0VUSUtBIDIsS0VUSUtBIDMsS0VUSUtBIDQsS0VUSUtBIDUsS0VUSUtBIDYsS0VUSUtBIDcsS0VUSUtBIDgsS0VUSUtBIDks")
